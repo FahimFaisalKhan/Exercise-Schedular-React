@@ -2,6 +2,7 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import ButtonPrimary from "../Buttons/ButtonPrimary";
+
 const Ecard = ({ activity, handler }) => {
   const { id, name, image, description, time } = activity;
 
