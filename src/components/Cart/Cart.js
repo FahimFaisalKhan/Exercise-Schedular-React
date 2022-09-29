@@ -5,12 +5,13 @@ import "./Cart.css";
 import Breaks from "./CartComps/Breaks";
 import Edetail from "./CartComps/Edetail";
 import UserInfo from "./CartComps/UserInfo";
-
+import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+import Button from "react-bootstrap/Button";
 import Popover from "react-bootstrap/Popover";
 
 const Cart = (props) => {
   const popover = (
-    <Popover id="popover-basic">
+    <Popover id="popover">
       <Popover.Header as="h3">Popover right</Popover.Header>
       <Popover.Body>
         And here's some <strong>amazing</strong> content. It's very engaging.
@@ -50,8 +51,17 @@ const Cart = (props) => {
       <Breaks btHandler={handleBreakTime}></Breaks>
       <h2 className="fs-5 mt-5 mb-2">Exercise details</h2>
       <Edetail time={props.time} breakTime={breakTime}></Edetail>
-
-      <ButtonPrimary gap={5} popover={popover}></ButtonPrimary>
+      <div className="mt-5 d-grid gap-2">
+        <OverlayTrigger
+          trigger="click"
+          overlay={popover}
+          placement="auto"
+          positionLeft={200}
+          positionTop={50}
+        >
+          <Button variant="success">Click me to see</Button>
+        </OverlayTrigger>
+      </div>
     </div>
   );
 };

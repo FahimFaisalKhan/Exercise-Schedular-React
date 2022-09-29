@@ -14,3 +14,8 @@
   color: white;
   background-color: #0d6efd;
 }
+#popover {
+  position: absolute;
+  top: 20rem;
+  left: 50rem;
+}
