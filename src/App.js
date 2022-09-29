@@ -4,6 +4,7 @@ import Cards from "./components/Cards/Cards";
 import Cart from "./components/Cart/Cart";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDumbbell } from "@fortawesome/free-solid-svg-icons";
+import Question from "./components/Questions/Question";
 function App() {
   const [time, setTime] = useState(0);
   const handleTime = (t) => {
@@ -27,6 +28,9 @@ function App() {
           </h1>
           <Cards handler={handleTime}></Cards>
         </main>
+        <section>
+          <Question></Question>
+        </section>
       </div>
       <div className="cart-container">
         <Cart time={time}></Cart>
