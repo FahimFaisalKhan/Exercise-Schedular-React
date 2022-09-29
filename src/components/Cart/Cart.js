@@ -1,24 +1,17 @@
 import React, { useEffect, useState } from "react";
 import Image from "react-bootstrap/Image";
-import ButtonPrimary from "../Buttons/ButtonPrimary";
 import "./Cart.css";
 import Breaks from "./CartComps/Breaks";
 import Edetail from "./CartComps/Edetail";
 import UserInfo from "./CartComps/UserInfo";
-import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Button from "react-bootstrap/Button";
-import Popover from "react-bootstrap/Popover";
+import Toast from "react-bootstrap/Toast";
 
 const Cart = (props) => {
-  const popover = (
-    <Popover id="popover">
-      <Popover.Header as="h3">Popover right</Popover.Header>
-      <Popover.Body>
-        And here's some <strong>amazing</strong> content. It's very engaging.
-        right?
-      </Popover.Body>
-    </Popover>
-  );
+  const [showA, setShowA] = useState(true);
+
+  const toggleShowA = () => setShowA(!showA);
+
   const [breakTime, setBreakTime] = useState(0);
   const handleBreakTime = (t) => {
     setBreakTime(t);
@@ -32,7 +25,7 @@ const Cart = (props) => {
     }
   }, []);
   return (
-    <div>
+    <div className="cart">
       <div className="d-flex">
         <Image
           style={{ width: "3.2rem", height: "3.5rem" }}
@@ -52,16 +45,20 @@ const Cart = (props) => {
       <h2 className="fs-5 mt-5 mb-2">Exercise details</h2>
       <Edetail time={props.time} breakTime={breakTime}></Edetail>
       <div className="mt-5 d-grid gap-2">
-        <OverlayTrigger
-          trigger="click"
-          overlay={popover}
-          placement="auto"
-          positionLeft={200}
-          positionTop={50}
-        >
-          <Button variant="success">Click me to see</Button>
-        </OverlayTrigger>
+        <Button onClick={toggleShowA} className="mb-2">
+          Toggle Toast <strong>with</strong> Animation
+        </Button>
       </div>
+      <Toast show={showA} onClose={toggleShowA} className="toast bg-success">
+        <Toast.Header>
+          <img src="holder.js/20x20?text=%20" className="rounded me-2" alt="" />
+          <strong className="me-auto">Hey Fahim</strong>
+          <small>Congratulations!</small>
+        </Toast.Header>
+        <Toast.Body className="fw-semibold text-white">
+          You have successfully selected your exercices.
+        </Toast.Body>
+      </Toast>
     </div>
   );
 };
