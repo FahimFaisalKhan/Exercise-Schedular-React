@@ -7,7 +7,7 @@ const ButtonPrimary = ({ handler, time }) => {
   return (
     <div className="d-grid  gap-2  ">
       <Button onClick={() => handler(time)} variant="primary" size="md">
-        <FontAwesomeIcon className="me-1" icon={faPlus} /> Block level button
+        <FontAwesomeIcon className="me-1" icon={faPlus} /> Add to list
       </Button>
     </div>
   );
