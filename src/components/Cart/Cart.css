@@ -1,6 +1,5 @@
 .cart {
   position: fixed;
-  width: 15%;
 }
 .unit {
   font-size: 1rem;
@@ -22,4 +21,11 @@
   position: absolute;
   left: -97rem;
   bottom: -14rem;
+}
+
+@media screen and (max-width: 576px) {
+  .cart {
+    position: relative;
+    width: auto;
+  }
 }

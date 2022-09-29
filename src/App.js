@@ -17,7 +17,7 @@ function App() {
       style={{ backgroundColor: "#dfe8eb" }}
     >
       <div className="container my-5">
-        <header className="fw-bold fs-2 text-primary">
+        <header className="fw-bold fs-1 text-primary">
           {" "}
           <FontAwesomeIcon className="me-1" icon={faDumbbell} /> Power Hour
         </header>

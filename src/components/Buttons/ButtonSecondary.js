@@ -9,7 +9,7 @@ const ButtonSecondary = () => {
     <div>
       <div className="mt-5 d-grid gap-2">
         <Button onClick={toggleShowA} className="mb-2">
-          Toggle Toast <strong>with</strong> Animation
+          Exercise Selection Complete
         </Button>
       </div>
       <Toast show={showA} onClose={toggleShowA} className="toast bg-success">
