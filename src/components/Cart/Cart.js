@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "react-bootstrap/Image";
 import ButtonPrimary from "../Buttons/ButtonPrimary";
 import "./Cart.css";
@@ -6,11 +6,30 @@ import Breaks from "./CartComps/Breaks";
 import Edetail from "./CartComps/Edetail";
 import UserInfo from "./CartComps/UserInfo";
 
+import Popover from "react-bootstrap/Popover";
+
 const Cart = (props) => {
+  const popover = (
+    <Popover id="popover-basic">
+      <Popover.Header as="h3">Popover right</Popover.Header>
+      <Popover.Body>
+        And here's some <strong>amazing</strong> content. It's very engaging.
+        right?
+      </Popover.Body>
+    </Popover>
+  );
   const [breakTime, setBreakTime] = useState(0);
   const handleBreakTime = (t) => {
     setBreakTime(t);
+    localStorage.setItem("breakTime", t);
   };
+
+  useEffect(() => {
+    const lcBt = localStorage.getItem("breakTime");
+    if (lcBt) {
+      setBreakTime(parseInt(lcBt));
+    }
+  }, []);
   return (
     <div>
       <div className="d-flex">
@@ -31,7 +50,8 @@ const Cart = (props) => {
       <Breaks btHandler={handleBreakTime}></Breaks>
       <h2 className="fs-5 mt-5 mb-2">Exercise details</h2>
       <Edetail time={props.time} breakTime={breakTime}></Edetail>
-      <ButtonPrimary gap={5}></ButtonPrimary>
+
+      <ButtonPrimary gap={5} popover={popover}></ButtonPrimary>
     </div>
   );
 };
