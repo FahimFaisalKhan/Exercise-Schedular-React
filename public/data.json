@@ -3,42 +3,42 @@
     "id": "633452ef326007e7cd84c370",
     "name": "Push Up",
     "image": "https://is3-ssl.mzstatic.com/image/thumb/Purple118/v4/82/90/f1/8290f18a-f4d4-5ab0-4f0a-886f3a426528/source/256x256bb.jpg",
-    "description": "pushhhhup",
+    "description": "Pushups are an exercise in which a person, keeping a prone position, with the hands palms down under the shoulders, the balls of the feet on the ground, and the back straight, pushes the body up and lets it down by an alternate straightening and bending of the arms.",
     "time": 30
   },
   {
     "id": "633452efed1209d7ce85b1cd",
     "name": "Chin up",
     "image": "https://www.stylist.co.uk/images/app/uploads/2021/01/03101428/pull-up-hero-crop-1609668896-1276x1276.jpg?w=256&h=256&fit=max&auto=format%2Ccompress",
-    "description": "Chiiiin uppp",
+    "description": "Chin up is an exercise in which one hangs by the hands from a support and pulls oneself up until the chin is level with the support specifically : such an exercise done with the palms facing inward . The movement involves hanging from a horizontal bar  using a supinated grip.",
     "time": 40
   },
   {
     "id": "633452ef4c239d04a04948d2",
     "name": "Sit up",
     "image": "https://pbs.twimg.com/profile_images/648759500099358724/PdYiKeCZ_400x400.jpg",
-    "description": "si up",
+    "description": "sit up is a conditioning exercise performed from a supine position by raising the torso to a sitting position and returning to the original position without using the arms or lifting the feet. Situps are classic abdominal exercises done by lying on your back and lifting your torso. ",
     "time": 50
   },
   {
     "id": "633452ef6fe7d8d27cd92415",
     "name": "Dumble fly",
     "image": "https://www.stylist.co.uk/images/app/uploads/2021/04/16154224/weight-machine-gym-crop-1618584205-1280x1280.jpg?w=256&h=256&fit=max&auto=format%2Ccompress",
-    "description": "Flyyy",
+    "description": "The dumbbell fly, also known as the dumbbell chest fly, is an upper body exercise that works muscle groups in your chest, shoulders, and arms. A dumbbell fly is performed by lying on a flat bench and lowering a pair of dumbbells to your sides while keeping relatively straight arms with slightly bent elbows.",
     "time": 60
   },
   {
     "id": "633452ef4bc4952b6ccbe8ba",
     "name": "Parralel bar dips",
     "image": "https://contents.lotteon.com/itemimage/_v130150/LO/10/50/63/55/16/_1/05/06/35/51/7/LO1050635516_1050635517_1.jpg/dims/resize/256x256",
-    "description": "hoilo",
+    "description": "Parallel bar dips are an advanced variation of the tricep dip exercise on a bench or elevated surface. Both moves work your triceps, chest, shoulders, and arm muscles. To perform parallel dips, you can do body weight or add extra weight during the exercise by: wearing a dip belt with weights attached to it.",
     "time": 70
   },
   {
     "id": "633452efe6d2bb7263bd4e07",
     "name": "Squats",
     "image": "https://www.stylist.co.uk/images/app/uploads/2021/02/27091544/how-to-squat-256x256.jpg?w=256&h=256&fit=max&auto=format%2Ccompress",
-    "description": "shesh",
+    "description": "A squat is a strength exercise in which the trainee lowers their hips from a standing position and then stands back up. During the descent of a squat, the hip and knee joints flex while the ankle joint dorsiflexes; conversely the hip and knee joints extend and the ankle joint plantarflexes when standing up.",
     "time": 80
   }
 ]
