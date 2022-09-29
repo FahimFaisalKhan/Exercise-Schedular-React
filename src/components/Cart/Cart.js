@@ -7,7 +7,7 @@ import UserInfo from "./CartComps/UserInfo";
 
 import ButtonSecondary from "../Buttons/ButtonSecondary";
 
-const Cart = (props) => {
+const Cart = ({ time }) => {
   const [breakTime, setBreakTime] = useState(0);
   const handleBreakTime = (t) => {
     setBreakTime(t);
@@ -39,7 +39,7 @@ const Cart = (props) => {
       <h2 className="fs-5 mt-5 mb-2">Add a break</h2>
       <Breaks btHandler={handleBreakTime}></Breaks>
       <h2 className="fs-5 mt-5 mb-2">Exercise details</h2>
-      <Edetail time={props.time} breakTime={breakTime}></Edetail>
+      <Edetail time={time} breakTime={breakTime}></Edetail>
       <ButtonSecondary></ButtonSecondary>
     </div>
   );

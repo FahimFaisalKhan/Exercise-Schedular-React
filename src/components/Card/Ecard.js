@@ -4,7 +4,7 @@ import Col from "react-bootstrap/Col";
 import ButtonPrimary from "../Buttons/ButtonPrimary";
 
 const Ecard = ({ activity, handler }) => {
-  const { id, name, image, description, time } = activity;
+  const { name, image, description, time } = activity;
 
   return (
     <Col>
