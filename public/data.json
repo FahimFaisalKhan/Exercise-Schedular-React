@@ -1,0 +1,44 @@
+[
+  {
+    "id": "633452ef326007e7cd84c370",
+    "name": "Push Up",
+    "image": "https://is3-ssl.mzstatic.com/image/thumb/Purple118/v4/82/90/f1/8290f18a-f4d4-5ab0-4f0a-886f3a426528/source/256x256bb.jpg",
+    "description": "pushhhhup",
+    "time": 30
+  },
+  {
+    "id": "633452efed1209d7ce85b1cd",
+    "name": "Chin up",
+    "image": "https://www.stylist.co.uk/images/app/uploads/2021/01/03101428/pull-up-hero-crop-1609668896-1276x1276.jpg?w=256&h=256&fit=max&auto=format%2Ccompress",
+    "description": "Chiiiin uppp",
+    "time": 40
+  },
+  {
+    "id": "633452ef4c239d04a04948d2",
+    "name": "Sit up",
+    "image": "https://pbs.twimg.com/profile_images/648759500099358724/PdYiKeCZ_400x400.jpg",
+    "description": "si up",
+    "time": 50
+  },
+  {
+    "id": "633452ef6fe7d8d27cd92415",
+    "name": "Dumble fly",
+    "image": "https://www.stylist.co.uk/images/app/uploads/2021/04/16154224/weight-machine-gym-crop-1618584205-1280x1280.jpg?w=256&h=256&fit=max&auto=format%2Ccompress",
+    "description": "Flyyy",
+    "time": 60
+  },
+  {
+    "id": "633452ef4bc4952b6ccbe8ba",
+    "name": "Parralel bar dips",
+    "image": "https://contents.lotteon.com/itemimage/_v130150/LO/10/50/63/55/16/_1/05/06/35/51/7/LO1050635516_1050635517_1.jpg/dims/resize/256x256",
+    "description": "hoilo",
+    "time": 70
+  },
+  {
+    "id": "633452efe6d2bb7263bd4e07",
+    "name": "Squats",
+    "image": "https://www.stylist.co.uk/images/app/uploads/2021/02/27091544/how-to-squat-256x256.jpg?w=256&h=256&fit=max&auto=format%2Ccompress",
+    "description": "shesh",
+    "time": 80
+  }
+]

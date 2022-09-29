@@ -1,21 +1,30 @@
-import logo from "./logo.svg";
+import { useState } from "react";
 import "./App.css";
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
+import Cards from "./components/Cards/Cards";
+import Cart from "./components/Cart/Cart";
 
 function App() {
+  const [time, setTime] = useState(0);
+  const handleTime = (t) => {
+    console.log(t, time);
+    setTime(time + t);
+  };
+
   return (
-    <Card style={{ width: "18rem" }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
-      <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
-    </Card>
+    <section className="d-flex" style={{ backgroundColor: "#dfe8eb" }}>
+      <div className="container my-5">
+        <header className="fw-bold fs-2 text-primary">
+          {" "}
+          Ultra active club
+        </header>
+        <main className="cards-container my-5">
+          <Cards handler={handleTime}></Cards>
+        </main>
+      </div>
+      <div className="cart-container">
+        <Cart time={time}></Cart>
+      </div>
+    </section>
   );
 }
 
